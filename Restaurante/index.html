@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Restaurante</title>
+    <script src="tienda.js" defer></script>
+</head>
+<body>
+    <h1>Restaurante Manolin</h1>
+
+    <!-- Mesa 1 -->
+    <h2>Mesa 1</h2>
+    <label for="comida-1">Comida</label>
+    <select name="Menu" id="comida-1" class="comida-select">
+        <option value="Hamburguesa" data-price="30">Hamburguesa - $30</option>
+        <option value="Pizza" data-price="40">Pizza - $40</option>
+        <option value="Perro Caliente" data-price="20">Perro Caliente - $20</option>
+        <option value="Sandwich" data-price="25">Sandwich - $25</option>
+    </select>
+    <button class="add-item" data-mesa-id="1" data-type="comida">+</button>
+    <button class="remove-item" data-mesa-id="1" data-type="comida">-</button>
+    <p class="quantity">Cantidad Comida: <span id="cantidad-comida-1">0</span></p>
+
+    <label for="bebida-1">Bebidas</label>
+    <select name="Menu" id="bebida-1" class="bebida-select">
+        <option value="Cocacola" data-price="10">Cocacola - $10</option>
+        <option value="Jugo Fresa" data-price="12">Jugo Fresa - $12</option>
+        <option value="Gaseosa Quatro" data-price="8">Gaseosa Quatro - $8</option>
+        <option value="Cerezada" data-price="10">Cerezada - $10</option>
+    </select>
+    <button class="add-item" data-mesa-id="1" data-type="bebida">+</button>
+    <button class="remove-item" data-mesa-id="1" data-type="bebida">-</button>
+    <p class="quantity">Cantidad Bebida: <span id="cantidad-bebida-1">0</span></p>
+
+    <div class="precio">
+        <p>Total: $<span id="total-1">0</span></p>
+    </div>
+
+    <h2>Mesa 2</h2>
+    <!-- Similar a la Mesa 1 -->
+    <label for="comida-2">Comida</label>
+    <select name="Menu" id="comida-2" class="comida-select">
+        <option value="Hamburguesa" data-price="30">Hamburguesa - $30</option>
+        <option value="Pizza" data-price="40">Pizza - $40</option>
+        <option value="Perro Caliente" data-price="20">Perro Caliente - $20</option>
+        <option value="Sandwich" data-price="25">Sandwich - $25</option>
+    </select>
+    <button class="add-item" data-mesa-id="2" data-type="comida">+</button>
+    <button class="remove-item" data-mesa-id="2" data-type="comida">-</button>
+    <p class="quantity">Cantidad Comida: <span id="cantidad-comida-2">0</span></p>
+
+    <label for="bebida-2">Bebidas</label>
+    <select name="Menu" id="bebida-2" class="bebida-select">
+        <option value="Cocacola" data-price="10">Cocacola - $10</option>
+        <option value="Jugo Fresa" data-price="12">Jugo Fresa - $12</option>
+        <option value="Gaseosa Quatro" data-price="8">Gaseosa Quatro - $8</option>
+        <option value="Cerezada" data-price="10">Cerezada - $10</option>
+    </select>
+    <button class="add-item" data-mesa-id="2" data-type="bebida">+</button>
+    <button class="remove-item" data-mesa-id="2" data-type="bebida">-</button>
+    <p class="quantity">Cantidad Bebida: <span id="cantidad-bebida-2">0</span></p>
+
+    <div class="precio">
+        <p>Total: $<span id="total-2">0</span></p>
+    </div>
+</body>
+</html>
