@@ -1,0 +1,108 @@
+
+body, h1, h2, p, select, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+
+h2 {
+    font-size: 2em;
+    color: #495057;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+
+label {
+    display: block;
+    font-size: 1.1em;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+
+select {
+    font-size: 1em;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 300px;
+}
+
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button.remove-item {
+    background-color: #dc3545;
+}
+
+button.remove-item:hover {
+    background-color: #c82333;
+}
+
+
+.quantity, .precio {
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+.precio p {
+    font-weight: bold;
+    color: #495057;
+}
+
+
+.container {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    
+    button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
